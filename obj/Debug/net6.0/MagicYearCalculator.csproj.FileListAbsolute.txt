@@ -1,0 +1,15 @@
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/bin/Debug/net6.0/MagicYearCalculator
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/bin/Debug/net6.0/MagicYearCalculator.deps.json
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/bin/Debug/net6.0/MagicYearCalculator.runtimeconfig.json
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/bin/Debug/net6.0/MagicYearCalculator.dll
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/bin/Debug/net6.0/MagicYearCalculator.pdb
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.csproj.AssemblyReference.cache
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.AssemblyInfoInputs.cache
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.AssemblyInfo.cs
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.csproj.CoreCompileInputs.cache
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.dll
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/refint/MagicYearCalculator.dll
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.pdb
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/MagicYearCalculator.genruntimeconfig.cache
+/Users/Andrew.Christabel/Desktop/Projects/Phase 1/Katas/MagicYearCalculator/obj/Debug/net6.0/ref/MagicYearCalculator.dll
