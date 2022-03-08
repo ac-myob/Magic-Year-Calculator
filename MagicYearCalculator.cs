@@ -4,11 +4,26 @@ using System.Text.RegularExpressions;
 
 namespace MagicYearCalculator // Note: actual namespace depends on the project name.
 {
+    class Person {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int AnnualSalary { get; set; }
+        public int StartYear { get; set; }
+
+        public string getFullName() {
+            return this.FirstName + " " + this.LastName;
+        }
+        public int getMonthlySalary() {
+            const int MONTHS_IN_YEAR = 12;
+            return (int)Math.Round((double)this.AnnualSalary/MONTHS_IN_YEAR);
+        }
+
+    }
     class MagicYearCalculator {
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private int AnnualSalary { get; set; }
-        private int StartYear { get; set; }
+        
+        private int getMagicYear(Person person, int magicConst=65) {
+            return person.StartYear + magicConst;
+        }
 
         private string getUserInput(string question, string regex) {
             string userResponse = "";
@@ -24,37 +39,22 @@ namespace MagicYearCalculator // Note: actual namespace depends on the project n
             return userResponse;
         }
 
-        private void getUserInfo() {
-            this.FirstName = getUserInput("Please input your name: ", "^[A-Z][a-z]*$");
-            this.LastName = getUserInput("Please input your surname: ", "^[A-Z][a-z]*$");
-            this.AnnualSalary = Convert.ToInt32(getUserInput("Please enter your annual salary: ", "^[0-9]*$"));
-            this.StartYear = Convert.ToInt32(getUserInput("Please enter your work start year : ", "^[0-9]{4}$"));
-        }
-        
-        private string getFullName() {
-            return this.FirstName + " " + this.LastName;
+        private void getUserInfo(Person person) {
+            person.FirstName = getUserInput("Please input your name: ", "^[A-Z][a-z]*$");
+            person.LastName = getUserInput("Please input your surname: ", "^[A-Z][a-z]*$");
+            person.AnnualSalary = Convert.ToInt32(getUserInput("Please enter your annual salary: ", "^[0-9]*$"));
+            person.StartYear = Convert.ToInt32(getUserInput("Please enter your work start year : ", "^[0-9]{4}$"));
         }
 
-        // Func<string> getFullName = () => this.FirstName;
-        // Func<int,int,int> test = (x, y) => x + y;
-
-        private int getMonthlySalary() {
-            const int MONTHS_IN_YEAR = 12;
-            return (int)Math.Round((double)this.AnnualSalary/MONTHS_IN_YEAR);
-        }
-
-        private int getMagicYear() {
-            const int MAGIC_CONST = 65;
-            return this.StartYear + MAGIC_CONST;
-        }
-        private string generateMagicAgeDetails() {
-            return $"\nYour magic age details are:\n\nName: {getFullName()}\nMonthly Salary: {getMonthlySalary()}\nMagic Year: {getMagicYear()}";
+        private string generateMagicAgeDetails(Person person) {
+            return $"\nYour magic age details are:\n\nName: {person.getFullName()}\nMonthly Salary: {person.getMonthlySalary()}\nMagic Year: {getMagicYear(person)}";
         }
 
         public void run() {
             Console.WriteLine("Welcome to the magic year calculator!\n");
-            getUserInfo();
-            Console.WriteLine(generateMagicAgeDetails());
+            Person person = new Person();
+            getUserInfo(person);
+            Console.WriteLine(generateMagicAgeDetails(person));
         }
     }
 }
